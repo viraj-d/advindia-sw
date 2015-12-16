@@ -1,13 +1,13 @@
 # manifests/winrar.pp
 
-class advindia::winrar inherits advindia {
+class advindia_sw::winrar inherits advindia_sw {
   File { source_permissions => ignore }
   ensure_resource(file, $workFolder, { ensure => directory })
 
   file{'WinrarInstaller':
     ensure => present,
     path   => "${workFolder}\\winrar-x64.exe",
-    source => 'puppet:///modules/advindia/winrar-x64.exe',
+    source => 'puppet:///modules/advindia_sw/winrar-x64.exe',
     #notify => Exec['WinrarInstall']
   }
 
