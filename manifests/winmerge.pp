@@ -7,7 +7,7 @@ class advindia_sw:winmerge inherits advindia_sw {
  file{'WinmergeInstaller':
        ensure => present,
        path => "${workFolder}\\WinMerge-2.14.0-Setup.exe",
-       source => 'puppet:///modules/advindia_sw/winrar-x64.exe',
+       source => 'puppet:///modules/advindia_sw/WinMerge-2.14.0-Setup.exe',
      }
      
  exec{'WinmergeInstall':
