@@ -6,6 +6,6 @@ class advindia_sw($workFolder = "C:\\Softwares") {
   
   # Include class winrar
   include advindia_sw::winrar
-  include advindia_sw:winmerge
+  include advindia_sw::winmerge
   
 }
