@@ -11,7 +11,7 @@ class advindia_sw:winmerge inherits advindia_sw {
      }
      
  exec{'WinmergeInstall':
-      command => "${workFolder}\\winrar-x64.exe /S /v\"/l* install.log\"",
+      command => "${workFolder}\\WinMerge-2.14.0-Setup.exe /S /v\"/l* install.log\"",
       creates     => 'C:\Program Files\WinMerge',
       require     => File['WinmergeInstaller']
     }
